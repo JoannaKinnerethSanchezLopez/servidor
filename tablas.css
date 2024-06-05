@@ -1,0 +1,46 @@
+.tabla1{
+    border: 5px solid blue;
+    border-collapse: collapse;
+}
+.tabla1 th{
+    background-color: plum;
+}
+tr:nth-child(even){
+    background-color: #bbbbbb;
+}
+.tabla2{
+    border: 5px solid palevioletred;
+    border-collapse: collapse;
+}
+.tabla2 th{
+    background-color: cyan;
+}
+.tabla2 td{
+    height: 40px;
+    vertical-align: right;
+    text-align: center;
+}
+.tabla3{
+    border: 5px solid rgb(219, 30, 93);
+    border-collapse: collapse;
+}
+.tabla3 th{
+    background-color: rgba(5, 87, 87, 0.705);
+    color: aliceblue;
+    height: 50px;
+    width: 100px;
+}
+.tabla3 td{
+    height: 40px;
+    vertical-align: right;
+    text-align: center;
+}
+.d1{
+    overflow-x: auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+.d1 th{
+    text-align: left;
+    padding: 8px;
+}

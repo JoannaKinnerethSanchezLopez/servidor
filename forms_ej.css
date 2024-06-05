@@ -1,0 +1,92 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: big;
+}
+div{
+    background-color: violet;
+}
+input[type=text]{
+    width: 100%;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline: none;
+}
+input[type=int]{
+    width: 45%;
+    border: 2px solid coral;
+    border-radius: 10px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline: none;
+}
+input[type=text]:focus{
+    background-color: lightblue;
+}
+input[type=int]:focus{
+    background-color: lightcoral;
+}
+input[type=submit]{
+    width: 100%;
+    padding: 14px 20px;
+    background-color: #497896;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    
+}
+  
+input[type=submit]:hover {
+    background-color: #3f506ecb;
+  }
+textarea{
+    width: 100%;
+    height: 150px;
+    border: 2px solid pink;
+    border-radius: 10px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+}
+textarea:focus{
+    background-color: lightpink;
+}
+
+
+body {
+    counter-reset: section;
+  }
+  
+  h3::before {
+    counter-increment: section;
+    content: "Section " counter(section) ": ";
+  }
+
+  
+  h4 {
+    counter-reset: subsection;
+  }
+  
+  h4::before {
+    counter-increment: section;
+    content: "Section " counter(section) ". ";
+  }
+  
+  h5::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+  }
+  ol {
+    counter-reset: section;
+    list-style-type: none;
+  }
+  
+  li::before {
+    counter-increment: section;
+    content: counters(section,".") " ";
+  }
